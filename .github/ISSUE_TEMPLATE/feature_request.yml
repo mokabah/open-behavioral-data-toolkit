@@ -1,0 +1,27 @@
+name: Feature request
+description: Suggest an addition or improvement
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This project favours a small, well-tested core. Diagnostic, screening or clinical
+        interpretation features are out of scope.
+  - type: textarea
+    id: problem
+    attributes:
+      label: The research workflow problem
+      description: What are you trying to do, and what is hard today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: For statistical features, name the method and give a reference. How could it be verified independently?
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contribution
+      options:
+        - label: I would be willing to work on this.

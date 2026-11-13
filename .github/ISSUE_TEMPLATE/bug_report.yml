@@ -1,0 +1,37 @@
+name: Bug report
+description: Something does not work as documented
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please use **synthetic or invented data only**. Never paste real
+        participant data into an issue.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproducible example
+      description: The smallest code and (synthetic) data that shows the problem.
+      render: python
+    validations:
+      required: true
+  - type: textarea
+    id: traceback
+    attributes:
+      label: Full traceback or output
+      render: text
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Paste the output of `import behavioral_data_toolkit as bdt; print(bdt.collect_environment_metadata())` and your operating system.
+      render: text
+    validations:
+      required: true

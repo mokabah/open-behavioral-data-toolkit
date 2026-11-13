@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://github.com/meworo/open-behavioral-data-toolkit/tree/main/docs
+    about: Usage guide, statistical methods and known limitations.

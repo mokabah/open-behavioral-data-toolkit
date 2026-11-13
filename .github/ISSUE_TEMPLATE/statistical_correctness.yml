@@ -1,0 +1,36 @@
+name: Statistical correctness concern
+description: A result seems mathematically wrong, or a method is documented incorrectly
+labels: ["statistics", "scientific-correctness"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Scientific correctness is a core goal. Please be as specific as you can, and use
+        **synthetic or invented data only**.
+  - type: input
+    id: function
+    attributes:
+      label: Function or documentation section
+      placeholder: "e.g. cronbach_alpha, or docs/STATISTICAL_METHODS.md > Spearman"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result and its source
+      description: A hand derivation, a textbook or paper reference, or output from another implementation (name and version).
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What this toolkit returns
+      description: Code and output.
+      render: python
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: Assumptions you believe are violated, edge cases, missing-data settings used.

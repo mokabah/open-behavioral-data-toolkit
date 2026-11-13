@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it using these metadata."
+title: "Open Behavioral Data Toolkit"
+type: software
+version: 0.1.0
+license: MIT
+authors:
+  - family-names: Ubaidillah
+    given-names: Mohamad Iksan
+repository-code: "https://github.com/meworo/open-behavioral-data-toolkit"
+# Add `date-released: YYYY-MM-DD` when the v0.1.0 release is actually tagged.
+abstract: >-
+  A reproducible Python toolkit for behavioral research: data validation,
+  questionnaire scoring, descriptive statistics, Cronbach's alpha, correlation
+  analysis and structured reporting with reproducibility metadata. Descriptive
+  tools only; no diagnostic or clinical functionality.
+keywords:
+  - behavioral science
+  - psychology
+  - psychometrics
+  - research software
+  - reproducibility

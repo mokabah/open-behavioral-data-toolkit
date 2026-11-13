@@ -1,0 +1,8 @@
+# Development environment: runtime dependencies + optional plotting + test runner.
+# The authoritative runtime dependency list is `dependencies` in pyproject.toml.
+# For linting/typing/build tools use: pip install -e ".[dev]"
+numpy>=1.26
+pandas>=2.1
+scipy>=1.11
+matplotlib>=3.8
+pytest>=8
